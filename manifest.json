@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Web3 to Scam",
+  "version": "1.0.0",
+  "description": "Replaces all instances of the word 'web3' with the word 'scam'",
+  "author": "http://github.com/jemmec",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "run_at": "document_end",
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["*://*/*"],
+  "permissions": ["scripting"]
+}
